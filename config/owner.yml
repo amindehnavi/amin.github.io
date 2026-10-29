@@ -1,0 +1,17 @@
+# Personal values used by agents. Agents read this file but never edit it.
+github_username: "amindehnavi"        # your GitHub login, lowercase, e.g. "amin-ml"
+name_en: "Amin Dehnavi"                # name as shown in English, e.g. "Amin M."
+name_fa: "امین دهنوی"                # name in Persian, e.g. "امین ..."
+tagline_en: "Machine Learning Engineer"             # one line, e.g. "ML engineer · Computer vision · Writing about deep learning"
+tagline_fa: "مهندس یادگیری ماشین"             # the same idea in Persian
+email: "amindhnv@gmail.com"                  # public contact email (shown on the site)
+linkedin_url: "www.linkedin.com/in/amin-dehnavi"           # full URL or ""
+scholar_url: "https://scholar.google.com/citations?user=T5_YqfwAAAAJ&hl=en"            # Google Scholar URL or ""
+x_url: ""                  # X/Twitter URL or ""
+content_license: "CC BY 4.0"   # license for your writing; keep unless you prefer another
+copyright_year: "2026"
+telegram_channel: ""       # later (M6), e.g. "@my_ml_channel"
+goatcounter_code: ""       # later (M4)
+giscus_repo_id: ""         # later (M4)
+giscus_category_id_en: ""  # later (M4)
+giscus_category_id_fa: ""  # later (M4)
