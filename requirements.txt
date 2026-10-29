@@ -1,0 +1,9 @@
+# Site-level Python packages: used to render posts and to run scripts/.
+# Heavy, post-specific packages (e.g. torch) are NOT listed here; post outputs are frozen.
+jupyter
+nbformat
+nbclient
+matplotlib
+numpy
+pyyaml
+plotly
