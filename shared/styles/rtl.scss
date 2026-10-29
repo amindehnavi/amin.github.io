@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+
+/*-- scss:rules --*/
+/* Code, program output and display math always read left-to-right. */
+pre,
+div.sourceCode,
+.cell-output,
+.cell-output-stdout,
+.cell-output-stderr,
+.cell-output-display,
+mjx-container[display="true"],
+.katex-display {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Inline code and inline math inside Persian sentences: isolate them. */
+code,
+kbd,
+samp,
+mjx-container:not([display="true"]) {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Mark English fragments inside Persian text: [GPT-2]{.ltr} */
+.ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+/* Persian text reads better with a little more line height. */
+body {
+  line-height: 1.9;
+}
