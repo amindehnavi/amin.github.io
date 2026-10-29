@@ -1,0 +1,12 @@
+{
+  "hash": "5918c7b314beb848cb7a54014f6bd21f",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"سلام، دنیا\"\ndescription: \"یک نوشتهٔ آزمایشی برای بررسی نمایش کد، نمودار و فرمول‌های ریاضی.\"\ndate: 2026-10-20\ncategories: [test]\n---\n\nاین یک **نوشتهٔ آزمایشی** است و پیش از راه‌اندازی سایت حذف می‌شود.\n\n## ریاضی\n\nریاضی درون‌خطی: سافت‌مکس (Softmax) بردار $z$ برابر است با $\\sigma(z)_i = e^{z_i} / \\sum_j e^{z_j}$.\n\nریاضی نمایشی:\n\n$$\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^\\top}{\\sqrt{d_k}}\\right) V\n$$\n\n## متن ترکیبی\n\nمدل [GPT-2]{.ltr} در سال ۲۰۱۹ معرفی شد و تابع `model.generate()` متن تولید می‌کند.\n\n## کد و نمودار\n\n::: {#fe85f1ca .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.linspace(-6, 6, 200)\nplt.plot(x, 1 / (1 + np.exp(-x)))\nplt.title(\"Sigmoid\")\nplt.xlabel(\"x\")\nplt.ylabel(\"sigmoid(x)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){width=590 height=450}\n:::\n:::\n\n\n## بلوک کد ساده\n\n```python\ndef greet(name: str) -> str:\n    return f\"Hello, {name}!\"\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

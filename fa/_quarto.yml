@@ -1,0 +1,37 @@
+project:
+  type: website
+  resources:
+    - assets/**
+
+lang: fa
+language: _language-fa.yml
+date-format: "YYYY-MM-DD"
+
+execute:
+  freeze: auto
+
+website:
+  title: "امین دهنوی"
+  site-url: "https://amindehnavi.github.io/amin.github.io/fa/"
+  repo-url: "https://github.com/amindehnavi/amin.github.io"
+  draft-mode: gone
+  navbar:
+    left:
+      - href: index.qmd
+        text: "خانه"
+      - href: blog.qmd
+        text: "نوشته‌ها"
+    right:
+      - href: "https://amindehnavi.github.io/amin.github.io/"
+        text: "English"
+        icon: translate
+        aria-label: "Read in English"
+
+format:
+  html:
+    dir: rtl
+    theme: [cosmo, assets/styles/rtl.scss]
+    css: assets/styles/fonts-fa.css
+    toc: true
+    code-copy: true
+    html-math-method: mathjax
