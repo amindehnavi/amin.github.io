@@ -1,0 +1,39 @@
+---
+title: "Hello, World"
+description: "A test post that checks code, plots and math rendering."
+date: 2026-10-20
+categories: [test]
+---
+
+This is a **test post**. It will be removed before launch.
+
+## Math
+
+Inline math: the softmax of $z$ is $\sigma(z)_i = e^{z_i} / \sum_j e^{z_j}$.
+
+Display math:
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right) V
+$$
+
+## Code and a plot
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-6, 6, 200)
+plt.plot(x, 1 / (1 + np.exp(-x)))
+plt.title("Sigmoid")
+plt.xlabel("x")
+plt.ylabel("sigmoid(x)")
+plt.show()
+```
+
+## Plain code block
+
+```python
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+```
