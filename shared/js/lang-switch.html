@@ -1,0 +1,22 @@
+<script>
+// Language switcher: points the navbar language link at the same page in the other language.
+// English pages live at /..., Persian pages at /fa/... (same folder names).
+(function () {
+  var links = Array.from(document.querySelectorAll(
+    '[aria-label="Read in Persian"], [aria-label="Read in English"]'
+  )).map(function (element) { return element.closest('a'); }).filter(Boolean);
+  if (!links.length) return;
+  var path = window.location.pathname;
+  var base = path === "/amin.github.io" || path.indexOf("/amin.github.io/") === 0 ? "/amin.github.io" : "";
+  var relative = path.slice(base.length) || "/";
+  var isPersian = relative === "/fa" || relative.indexOf("/fa/") === 0;
+  var target = base + (isPersian ? (relative.replace(/^\/fa/, "") || "/") : "/fa" + relative);
+  var fallback = base + (isPersian ? "/" : "/fa/");
+  links.forEach(function (a) { a.setAttribute("href", fallback); });
+  fetch(target, { method: "HEAD" })
+    .then(function (r) {
+      if (r.ok) links.forEach(function (a) { a.setAttribute("href", target); });
+    })
+    .catch(function () {});
+})();
+</script>

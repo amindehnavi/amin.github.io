@@ -35,3 +35,4 @@ format:
     toc: true
     code-copy: true
     html-math-method: mathjax
+    include-after-body: assets/js/lang-switch.html
