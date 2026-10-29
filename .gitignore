@@ -1,0 +1,28 @@
+# Quarto build output
+/en/_site/
+/fa/_site/
+/public/
+/en/.quarto/
+/fa/.quarto/
+.quarto/
+
+# Copies of shared/ made by scripts/sync_shared.py (never edit these)
+/en/assets/
+/fa/assets/
+
+# Temporary working folder for agents and scripts
+/.tmp/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets (never commit)
+.env
