@@ -1,0 +1,9 @@
+- slug: "defect-detection"            # lowercase-with-dashes, unique
+  title_en: "Surface Defect Detection"
+  title_fa: ""                        # optional; agent drafts it if empty
+  summary_en: "One sentence: what it does and the result."
+  summary_fa: ""                      # optional; agent drafts it if empty
+  year: 2025
+  tags: [computer-vision, pytorch]
+  url: "https://github.com/..."       # repo or demo link (required)
+  image: "defect-detection.png"       # file you put in content-inputs/projects/ (optional)
