@@ -1,0 +1,34 @@
+project:
+  type: website
+  resources:
+    - assets/**
+
+lang: en
+date-format: "MMMM D, YYYY"
+
+execute:
+  freeze: auto
+
+website:
+  title: "Amin Dehnavi"
+  site-url: "https://amindehnavi.github.io/amin.github.io/"
+  repo-url: "https://github.com/amindehnavi/amin.github.io"
+  draft-mode: gone
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: blog.qmd
+        text: "Blog"
+    right:
+      - href: "https://amindehnavi.github.io/amin.github.io/fa/"
+        text: "فارسی"
+        icon: translate
+        aria-label: "Read in Persian"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    html-math-method: mathjax
