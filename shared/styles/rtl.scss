@@ -35,3 +35,16 @@ mjx-container:not([display="true"]) {
 body {
   line-height: 1.9;
 }
+
+/* Correct Bootstrap's physical margin utilities for RTL navigation. */
+@media (min-width: 992px) {
+  html[dir="rtl"] #quarto-header .navbar-nav.me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+
+  html[dir="rtl"] #quarto-header .navbar-nav.ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
