@@ -28,7 +28,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, assets/styles/base.scss]
+      dark: [cosmo, assets/styles/base.scss, assets/styles/dark.scss]
     toc: true
     code-copy: true
     html-math-method: mathjax

@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+$primary: #7aa2ff;
+$body-bg: #0f1419;
+$body-color: #e6edf3;
+$link-color: #7aa2ff;
+$navbar-bg: #0f1419;
+$navbar-fg: #e6edf3;
+$navbar-hl: #7aa2ff;
+$footer-bg: #0f1419;
+$code-color: #ff8fab;
+$code-block-bg: #161b22;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}

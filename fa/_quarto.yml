@@ -30,7 +30,9 @@ website:
 format:
   html:
     dir: rtl
-    theme: [cosmo, assets/styles/rtl.scss]
+    theme:
+      light: [cosmo, assets/styles/base.scss, assets/styles/rtl.scss]
+      dark: [cosmo, assets/styles/base.scss, assets/styles/dark.scss, assets/styles/rtl.scss]
     css: assets/styles/fonts-fa.css
     toc: true
     code-copy: true

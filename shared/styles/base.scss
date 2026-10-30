@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+$primary: #3b5bdb !default;
+$body-bg: #ffffff !default;
+$body-color: #1f2328 !default;
+$link-color: #3b5bdb !default;
+$navbar-bg: #ffffff !default;
+$navbar-fg: #1f2328 !default;
+$navbar-hl: #3b5bdb !default;
+$footer-bg: #ffffff !default;
+$code-color: #a61e4d !default;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !default;
+$font-size-root: 17px !default;
+$line-height-base: 1.7 !default;
+
+/*-- scss:rules --*/
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.quarto-title .subtitle {
+  opacity: 0.8;
+}
+.cell-output-display img,
+figure img {
+  border-radius: 6px;
+}
