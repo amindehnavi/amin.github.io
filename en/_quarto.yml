@@ -14,6 +14,16 @@ website:
   site-url: "https://amindehnavi.github.io/amin.github.io/"
   repo-url: "https://github.com/amindehnavi/amin.github.io"
   draft-mode: gone
+  favicon: assets/images/favicon.svg
+  page-footer:
+    left: "© 2026 Amin Dehnavi · Text licensed CC BY 4.0"
+    right:
+      - icon: github
+        href: "https://github.com/amindehnavi"
+        aria-label: "GitHub"
+      - icon: rss
+        href: blog.xml
+        aria-label: "RSS feed"
   navbar:
     left:
       - href: index.qmd

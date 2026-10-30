@@ -15,6 +15,16 @@ website:
   site-url: "https://amindehnavi.github.io/amin.github.io/fa/"
   repo-url: "https://github.com/amindehnavi/amin.github.io"
   draft-mode: gone
+  favicon: assets/images/favicon.svg
+  page-footer:
+    left: "© 2026 امین دهنوی · متن‌ها با مجوز CC BY 4.0"
+    right:
+      - icon: github
+        href: "https://github.com/amindehnavi"
+        aria-label: "گیت‌هاب"
+      - icon: rss
+        href: blog.xml
+        aria-label: "خوراک RSS"
   navbar:
     left:
       - href: index.qmd
