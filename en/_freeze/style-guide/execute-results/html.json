@@ -1,0 +1,12 @@
+{
+  "hash": "7eed834e57996e2c6e98ab687d24701f",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Style guide\"\ndescription: \"Every content element, used to check the design. Not linked from the menu.\"\nsearch: false\n---\n\n## Headings\n\n### Third-level heading\n\n#### Fourth-level heading\n\n## Paragraphs and emphasis\n\nA normal paragraph with **bold**, *italic*, `inline code`, a [link](https://quarto.org), and a footnote.[^1]\n\n[^1]: This is the footnote text.\n\n## Lists\n\n- Unordered item one\n- Unordered item two\n  - Nested item\n\n1. Ordered item one\n2. Ordered item two\n\n## Quote\n\n> Attention is all you need. — Vaswani et al., 2017\n\n## Callouts\n\n::: {.callout-note}\nA note callout.\n:::\n\n::: {.callout-tip}\nA tip callout.\n:::\n\n::: {.callout-warning}\nA warning callout.\n:::\n\n::: {.callout-important}\nAn important callout.\n:::\n\n::: {.callout-caution collapse=\"true\"}\n## A collapsible caution callout\nHidden content.\n:::\n\n## Math\n\nInline: $\\mathbf{x} \\in \\mathbb{R}^{d}$ and $p(y \\mid x)$.\n\nNumbered equation:\n\n$$\n\\mathcal{L}(\\theta) = -\\sum_{i=1}^{N} \\log p_\\theta(y_i \\mid x_i)\n$$ {#eq-loss}\n\nSee @eq-loss.\n\nAligned equations:\n\n$$\n\\begin{aligned}\nQ &= X W_Q \\\\\nK &= X W_K \\\\\nV &= X W_V\n\\end{aligned}\n$$\n\n## Code\n\n```python\nimport torch\n\nx = torch.randn(2, 3)\nprint(x.shape)\n```\n\n```bash\npip install torch\n```\n\n## Executed code\n\n::: {#e56f3894 .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\nprint(np.round(np.random.default_rng(0).normal(size=(2, 3)), 3))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[[ 0.126 -0.132  0.64 ]\n [ 0.105 -0.536  0.362]]\n```\n:::\n:::\n\n\n::: {#cell-fig-sine .cell execution_count=2}\n``` {.python .cell-code}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nt = np.linspace(0, 2 * np.pi, 200)\nplt.plot(t, np.sin(t))\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![A sine wave.](style-guide_files/figure-html/fig-sine-output-1.png){#fig-sine width=591 height=411}\n:::\n:::\n\n\nSee @fig-sine.\n\n## Table\n\n| Model | Parameters | Year |\n|---|---:|---:|\n| BERT-base | 110M | 2018 |\n| GPT-2 | 1.5B | 2019 |\n\n: Model sizes {#tbl-models}\n\nSee @tbl-models.\n\n## Image\n\n![A placeholder image](assets/images/post-placeholder.svg){width=50%}\n\n## Details\n\n<details>\n<summary>Click to expand</summary>\nHidden details.\n</details>\n\n",
+    "supporting": [
+      "style-guide_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

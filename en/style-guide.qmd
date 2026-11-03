@@ -1,0 +1,130 @@
+---
+title: "Style guide"
+description: "Every content element, used to check the design. Not linked from the menu."
+search: false
+---
+
+## Headings
+
+### Third-level heading
+
+#### Fourth-level heading
+
+## Paragraphs and emphasis
+
+A normal paragraph with **bold**, *italic*, `inline code`, a [link](https://quarto.org), and a footnote.[^1]
+
+[^1]: This is the footnote text.
+
+## Lists
+
+- Unordered item one
+- Unordered item two
+  - Nested item
+
+1. Ordered item one
+2. Ordered item two
+
+## Quote
+
+> Attention is all you need. — Vaswani et al., 2017
+
+## Callouts
+
+::: {.callout-note}
+A note callout.
+:::
+
+::: {.callout-tip}
+A tip callout.
+:::
+
+::: {.callout-warning}
+A warning callout.
+:::
+
+::: {.callout-important}
+An important callout.
+:::
+
+::: {.callout-caution collapse="true"}
+## A collapsible caution callout
+Hidden content.
+:::
+
+## Math
+
+Inline: $\mathbf{x} \in \mathbb{R}^{d}$ and $p(y \mid x)$.
+
+Numbered equation:
+
+$$
+\mathcal{L}(\theta) = -\sum_{i=1}^{N} \log p_\theta(y_i \mid x_i)
+$$ {#eq-loss}
+
+See @eq-loss.
+
+Aligned equations:
+
+$$
+\begin{aligned}
+Q &= X W_Q \\
+K &= X W_K \\
+V &= X W_V
+\end{aligned}
+$$
+
+## Code
+
+```python
+import torch
+
+x = torch.randn(2, 3)
+print(x.shape)
+```
+
+```bash
+pip install torch
+```
+
+## Executed code
+
+```{python}
+import numpy as np
+print(np.round(np.random.default_rng(0).normal(size=(2, 3)), 3))
+```
+
+```{python}
+#| label: fig-sine
+#| fig-cap: "A sine wave."
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0, 2 * np.pi, 200)
+plt.plot(t, np.sin(t))
+plt.show()
+```
+
+See @fig-sine.
+
+## Table
+
+| Model | Parameters | Year |
+|---|---:|---:|
+| BERT-base | 110M | 2018 |
+| GPT-2 | 1.5B | 2019 |
+
+: Model sizes {#tbl-models}
+
+See @tbl-models.
+
+## Image
+
+![A placeholder image](assets/images/post-placeholder.svg){width=50%}
+
+## Details
+
+<details>
+<summary>Click to expand</summary>
+Hidden details.
+</details>
