@@ -27,3 +27,8 @@ h1, h2, h3, h4 {
 figure img {
   border-radius: 6px;
 }
+
+/* Listing tables: let long tokens (arXiv ids, names) wrap so tables fit phone screens. */
+.quarto-listing-table td {
+  overflow-wrap: anywhere;
+}
