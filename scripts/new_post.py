@@ -27,6 +27,8 @@ def main() -> int:
 
     if not SLUG_RE.match(args.slug):
         return fail("slug must be lowercase words joined by dashes")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", args.date):
+        return fail("date must be YYYY-MM-DD")
     try:
         parsed = datetime.datetime.strptime(args.date, "%Y-%m-%d").date()
     except ValueError:
