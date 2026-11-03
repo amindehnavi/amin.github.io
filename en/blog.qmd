@@ -6,6 +6,12 @@ listing:
   type: default
   categories: true
   feed: true
+  page-size: 10
+  image-placeholder: assets/images/post-placeholder.svg
+  fields: [image, date, title, description, categories, reading-time]
 page-layout: full
 title-block-banner: false
+toc: false
 ---
+
+Notes on what I learn in machine learning and deep learning. Every post is also available in Persian.
