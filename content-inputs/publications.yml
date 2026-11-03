@@ -1,5 +1,15 @@
 - title: "Learning to Remove, Not Repeat: Robust Object Removal in Cluttered Scenes using Diffusion Models"
   authors: "Ramezan Dehnavi M. A., Fathi M., Akhlaghi A., Khanehgir S., Amini A."
-  venue: "WACV 2025"
-  date: 2025-06-01
+  venue: "WACV 2027 (accepted for round 2)"
+  date: 2027-01-01
+  url: ""
+- title: "PCGPT: Procedural Content Generation via Transformers"
+  authors: "Mohaghegh S., Ramezan Dehnavi M. A., Abdollahinejad G., Hashemi M."
+  venue: "arXiv:2310.02405"
+  date: 2023-01-01
+  url: "https://arxiv.org/abs/2310.02405"
+- title: "An optimal method for detecting pedestrians in hazy weather in self-driving cars using deep learning approach"
+  authors: "Ramezan Dehnavi M. A., Hamidi A., Baradaran Shokouhi S."
+  venue: "AIRAFT Conference, Tehran"
+  date: 2020-01-01
   url: ""

@@ -1,4 +1,16 @@
-- title: "Multi-Modal AI"
+- title: "Multi-Modal AI (invited workshop)"
   event: "Hamrah Academy Generative AI bootcamp"
-  date: 2025-03-10
+  date: 2026-09-01
   url: ""              # slides/video link, or ""
+- title: "Transformers in Vision (invited lecture)"
+  event: "Deep Learning course, Sharif University of Technology"
+  date: 2024-11-01
+  url: ""
+- title: "Chief Teaching Assistant — Deep Learning (Fall 2022, 2023, 2024)"
+  event: "Sharif University of Technology"
+  date: 2024-09-01
+  url: ""
+- title: "Teaching Assistant — Statistical Learning (Spring 2022, 2023)"
+  event: "Sharif University of Technology"
+  date: 2023-02-01
+  url: ""
