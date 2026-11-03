@@ -1,0 +1,9 @@
+- slug: "dl2021_final_project"            # lowercase-with-dashes, unique
+  title_en: "DL2021_FinalProject"
+  title_fa: "پروژه پایانی درس یادگیری عمیق"                        # optional; agent drafts it if empty
+  summary_en: "In this project, we intend to detect objects that are closer than a threshold using depth estimation and object detection networks."
+  summary_fa: "در این پروژه، ما قصد داریم تا اشیاء را که در فاصله‌ای از یک آستانه هستند، با استفاده از شبکه‌های تخمین عمق و تشخیص اشیاء تشخیص دهیم."                      # optional; agent drafts it if empty
+  year: 2021
+  tags: [computer-vision, pytorch]
+  url: "https://github.com/amindehnavi/DL2021_FinalProject"       # repo or demo link (required)
+  image: "DL2021.png"       # file you put in content-inputs/projects/ (optional)
