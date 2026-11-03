@@ -1,0 +1,10 @@
+---
+title: "Page not found"
+toc: false
+---
+
+Sorry, this page doesn't exist. Go to the [home page](index.qmd) or read the [blog](blog.qmd).
+
+::: {dir="rtl" lang="fa"}
+متأسفیم، این صفحه وجود ندارد. به [صفحهٔ اصلی فارسی](/fa/) بروید یا [نوشته‌ها](/fa/blog.html) را بخوانید.
+:::
