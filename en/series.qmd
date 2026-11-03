@@ -1,0 +1,25 @@
+---
+title: "Series"
+toc: false
+listing:
+  - id: transformers-from-scratch
+    contents: posts
+    include:
+      series: "transformers-from-scratch"
+    sort: "series-order"
+    type: table
+    fields: [series-order, title, date]
+    field-display-names:
+      series-order: "#"
+    filter-ui: false
+    sort-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+## Transformers from Scratch
+
+A step-by-step series, from attention to training a tiny GPT on Persian text.
+
+::: {#transformers-from-scratch}
+:::

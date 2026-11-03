@@ -3,6 +3,8 @@ title: "سلام، دنیا"
 description: "یک نوشتهٔ آزمایشی برای بررسی نمایش کد، نمودار و فرمول‌های ریاضی."
 date: 2026-10-20
 categories: [test]
+series: "transformers-from-scratch"
+series-order: 0
 ---
 
 این یک **نوشتهٔ آزمایشی** است و پیش از راه‌اندازی سایت حذف می‌شود.

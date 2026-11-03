@@ -31,6 +31,8 @@ website:
         text: "خانه"
       - href: blog.qmd
         text: "نوشته‌ها"
+      - href: series.qmd
+        text: "مجموعه‌ها"
       - href: projects.qmd
         text: "پروژه‌ها"
       - href: publications.qmd

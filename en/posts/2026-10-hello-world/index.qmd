@@ -3,6 +3,8 @@ title: "Hello, World"
 description: "A test post that checks code, plots and math rendering."
 date: 2026-10-20
 categories: [test]
+series: "transformers-from-scratch"
+series-order: 0
 ---
 
 This is a **test post**. It will be removed before launch.

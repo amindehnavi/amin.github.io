@@ -30,6 +30,8 @@ website:
         text: "Home"
       - href: blog.qmd
         text: "Blog"
+      - href: series.qmd
+        text: "Series"
       - href: projects.qmd
         text: "Projects"
       - href: publications.qmd

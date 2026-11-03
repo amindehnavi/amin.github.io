@@ -1,0 +1,25 @@
+---
+title: "مجموعه‌ها"
+toc: false
+listing:
+  - id: transformers-from-scratch
+    contents: posts
+    include:
+      series: "transformers-from-scratch"
+    sort: "series-order"
+    type: table
+    fields: [series-order, title, date]
+    field-display-names:
+      series-order: "#"
+    filter-ui: false
+    sort-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+## ترنسفورمر از صفر
+
+مجموعه‌ای گام‌به‌گام، از سازوکار توجه تا آموزش یک [GPT]{.ltr} کوچک روی متن فارسی.
+
+::: {#transformers-from-scratch}
+:::
