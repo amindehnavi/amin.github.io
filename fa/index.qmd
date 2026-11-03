@@ -1,6 +1,44 @@
 ---
 title: "امین دهنوی"
 subtitle: "مهندس یادگیری ماشین"
+image: assets/images/profile.jpg
+image-alt: "عکس امین دهنوی"
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  id: about-block
+  links:
+    - icon: github
+      text: "گیت‌هاب"
+      href: "https://github.com/amindehnavi"
+    - icon: linkedin
+      text: "لینکدین"
+      href: "https://www.linkedin.com/in/amin-dehnavi"
+    - icon: mortarboard-fill
+      text: "گوگل اسکالر"
+      href: "https://scholar.google.com/citations?user=T5_YqfwAAAAJ&hl=en"
+    - icon: envelope
+      text: "ایمیل"
+      href: "mailto:amindhnv@gmail.com"
+listing:
+  id: latest-posts
+  contents: posts
+  sort: "date desc"
+  type: default
+  max-items: 3
+  feed: false
+  fields: [date, title, description]
 ---
 
-این سایت در حال ساخت است. نسخه‌های فارسی و انگلیسی به‌زودی آماده می‌شوند.
+::: {#about-block}
+من مهندس یادگیری ماشین و بینایی کامپیوتر هستم.
+
+[خواندن نوشته‌ها ←](blog.qmd)
+:::
+
+## تازه‌ترین نوشته‌ها
+
+::: {#latest-posts}
+:::
