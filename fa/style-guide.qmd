@@ -1,0 +1,138 @@
+---
+title: "راهنمای نمایش"
+description: "همهٔ اجزای محتوا برای بررسی طراحی. در منو پیوندی به آن نیست."
+search: false
+---
+
+## عنوان‌ها
+
+### عنوان سطح سوم
+
+#### عنوان سطح چهارم
+
+## بندها و تأکید
+
+یک بند معمولی با **متن پررنگ**، *متن کج*، `inline code`، یک [پیوند](https://quarto.org) و یک پانویس.[^1]
+
+[^1]: این متن پانویس است.
+
+## فهرست‌ها
+
+- مورد اول فهرست نامرتب
+- مورد دوم فهرست نامرتب
+  - مورد تودرتو
+
+1. مورد اول فهرست مرتب
+2. مورد دوم فهرست مرتب
+
+## نقل‌قول
+
+> توجه، تمام چیزی است که لازم دارید. — [Vaswani et al., 2017]{.ltr}
+
+## کادرهای توضیحی
+
+::: {.callout-note}
+یک کادر یادداشت.
+:::
+
+::: {.callout-tip}
+یک کادر نکته.
+:::
+
+::: {.callout-warning}
+یک کادر هشدار.
+:::
+
+::: {.callout-important}
+یک کادر مهم.
+:::
+
+::: {.callout-caution collapse="true"}
+## یک کادر احتیاط تاشو
+محتوای پنهان.
+:::
+
+## ریاضیات
+
+درون‌خطی: $\mathbf{x} \in \mathbb{R}^{d}$ و $p(y \mid x)$.
+
+معادلهٔ شماره‌دار:
+
+$$
+\mathcal{L}(\theta) = -\sum_{i=1}^{N} \log p_\theta(y_i \mid x_i)
+$$ {#eq-loss}
+
+به @eq-loss نگاه کنید.
+
+معادله‌های هم‌تراز:
+
+$$
+\begin{aligned}
+Q &= X W_Q \\
+K &= X W_K \\
+V &= X W_V
+\end{aligned}
+$$
+
+## کد
+
+```python
+import torch
+
+x = torch.randn(2, 3)
+print(x.shape)
+```
+
+```bash
+pip install torch
+```
+
+## کد اجراشده
+
+```{python}
+import numpy as np
+print(np.round(np.random.default_rng(0).normal(size=(2, 3)), 3))
+```
+
+```{python}
+#| label: fig-sine
+#| fig-cap: "یک موج سینوسی."
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.linspace(0, 2 * np.pi, 200)
+plt.plot(t, np.sin(t))
+plt.show()
+```
+
+به @fig-sine نگاه کنید.
+
+## جدول
+
+| مدل | تعداد پارامترها | سال |
+|---|---:|---:|
+| BERT-base | 110M | 2018 |
+| GPT-2 | 1.5B | 2019 |
+
+: اندازهٔ مدل‌ها {#tbl-models}
+
+به @tbl-models نگاه کنید.
+
+## تصویر
+
+![یک تصویر جای‌نگهدار](assets/images/post-placeholder.svg){width=50%}
+
+## متن ترکیبی
+
+مدل [BERT-base]{.ltr} حدود ۱۱۰ میلیون پارامتر دارد و با کتابخانهٔ [PyTorch]{.ltr} و کلاس `torch.nn.Transformer` پیاده‌سازی می‌شود.
+
+آیا $p(y \mid x)$ همان احتمال شرطی است؟ بله، و در [GPT-2]{.ltr} برای هر توکن (Token) محاسبه می‌شود.
+
+پرانتزها (مثل این) و «گیومه‌ها» و علامت‌های ، ؛ ؟ باید درست نمایش داده شوند.
+
+## جزئیات
+
+<details>
+<summary>برای باز کردن کلیک کنید</summary>
+جزئیات پنهان.
+</details>
