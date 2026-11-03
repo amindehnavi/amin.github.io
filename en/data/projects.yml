@@ -1,0 +1,6 @@
+- title: "DL2021_FinalProject"
+  description: "In this project, we intend to detect objects that are closer than a threshold using depth estimation and object detection networks."
+  date: "2021-01-01"
+  categories: [computer-vision, pytorch]
+  path: "https://github.com/amindehnavi/DL2021_FinalProject"
+  image: "assets/images/projects/DL2021.png"

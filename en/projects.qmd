@@ -1,0 +1,15 @@
+---
+title: "Projects"
+listing:
+  contents: data/projects.yml
+  type: grid
+  sort: "date desc"
+  categories: true
+  grid-columns: 2
+  fields: [image, title, description, categories]
+page-layout: full
+title-block-banner: false
+toc: false
+---
+
+Selected projects. Each card links to the code or a demo.

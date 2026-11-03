@@ -1,0 +1,6 @@
+- title: "پروژه پایانی درس یادگیری عمیق"
+  description: "در این پروژه، ما قصد داریم تا اشیاء را که در فاصله‌ای از یک آستانه هستند، با استفاده از شبکه‌های تخمین عمق و تشخیص اشیاء تشخیص دهیم."
+  date: "2021-01-01"
+  categories: [computer-vision, pytorch]
+  path: "https://github.com/amindehnavi/DL2021_FinalProject"
+  image: "assets/images/projects/DL2021.png"

@@ -1,0 +1,15 @@
+---
+title: "پروژه‌ها"
+listing:
+  contents: data/projects.yml
+  type: grid
+  sort: "date desc"
+  categories: true
+  grid-columns: 2
+  fields: [image, title, description, categories]
+page-layout: full
+title-block-banner: false
+toc: false
+---
+
+برخی از پروژه‌های من. هر کارت به کد یا نسخهٔ نمایشی پروژه پیوند دارد.
