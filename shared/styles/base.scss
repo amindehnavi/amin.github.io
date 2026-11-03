@@ -32,3 +32,10 @@ figure img {
 .quarto-listing-table td {
   overflow-wrap: anywhere;
 }
+
+/* Wide display equations scroll inside their own box instead of widening the page on phones. */
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
