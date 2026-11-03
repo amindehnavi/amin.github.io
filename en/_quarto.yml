@@ -30,6 +30,12 @@ website:
         text: "Home"
       - href: blog.qmd
         text: "Blog"
+      - href: projects.qmd
+        text: "Projects"
+      - href: publications.qmd
+        text: "Publications"
+      - href: cv.qmd
+        text: "CV"
     right:
       - href: "https://amindehnavi.github.io/amin.github.io/fa/"
         text: "فارسی"

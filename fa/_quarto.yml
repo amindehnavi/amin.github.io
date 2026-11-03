@@ -31,6 +31,12 @@ website:
         text: "خانه"
       - href: blog.qmd
         text: "نوشته‌ها"
+      - href: projects.qmd
+        text: "پروژه‌ها"
+      - href: publications.qmd
+        text: "مقالات و ارائه‌ها"
+      - href: cv.qmd
+        text: "رزومه"
     right:
       - href: "https://amindehnavi.github.io/amin.github.io/"
         text: "English"
