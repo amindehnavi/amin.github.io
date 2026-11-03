@@ -1,6 +1,44 @@
 ---
 title: "Amin Dehnavi"
 subtitle: "Machine Learning Engineer"
+image: assets/images/profile.jpg
+image-alt: "Photo of Amin Dehnavi"
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  id: about-block
+  links:
+    - icon: github
+      text: GitHub
+      href: "https://github.com/amindehnavi"
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/amin-dehnavi"
+    - icon: mortarboard-fill
+      text: Scholar
+      href: "https://scholar.google.com/citations?user=T5_YqfwAAAAJ&hl=en"
+    - icon: envelope
+      text: Email
+      href: "mailto:amindhnv@gmail.com"
+listing:
+  id: latest-posts
+  contents: posts
+  sort: "date desc"
+  type: default
+  max-items: 3
+  feed: false
+  fields: [date, title, description]
 ---
 
-This site is under construction. The English and Persian versions are being built.
+::: {#about-block}
+I am a machine learning and computer vision engineer.
+
+[Read the blog →](blog.qmd)
+:::
+
+## Latest posts
+
+::: {#latest-posts}
+:::
