@@ -173,11 +173,12 @@ Plot.plot({
 #| echo: false
 import numpy as np
 import plotly.graph_objects as go
+from IPython.display import HTML
 
 x = np.linspace(-3, 3, 61)
 fig = go.Figure(go.Scatter(x=x, y=np.tanh(x), mode="lines"))
 fig.update_layout(title="Hover over the curve", xaxis_title="x", yaxis_title="tanh(x)")
-fig.show()
+HTML(fig.to_html(full_html=False, include_plotlyjs="cdn", include_mathjax=False))
 ```
 
 :::
