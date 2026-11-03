@@ -48,3 +48,8 @@ body {
     margin-right: auto !important;
   }
 }
+
+/* Listing tables mix English and Persian: let each cell take its direction from its own text. */
+html[dir="rtl"] .quarto-listing-table td {
+  unicode-bidi: plaintext;
+}
