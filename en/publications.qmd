@@ -6,6 +6,7 @@ listing:
     contents: data/publications.yml
     type: table
     sort: "date desc"
+    date-format: "YYYY"
     fields: [date, title, author, description]
     field-display-names:
       description: "Venue"
@@ -15,6 +16,7 @@ listing:
     contents: data/talks.yml
     type: table
     sort: "date desc"
+    date-format: "YYYY-MM"
     fields: [date, title, description]
     field-display-names:
       description: "Event"
