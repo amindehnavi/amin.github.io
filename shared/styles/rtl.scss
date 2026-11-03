@@ -53,3 +53,23 @@ body {
 html[dir="rtl"] .quarto-listing-table td {
   unicode-bidi: plaintext;
 }
+
+/* Callouts: move Quarto's coloured accent border from the left to the right (start) side. */
+html[dir="rtl"] div.callout.callout-style-default,
+html[dir="rtl"] div.callout.callout-style-simple {
+  border-left: 1px solid $table-border-color;
+  border-right-width: $callout-border-width;
+  border-right-style: solid;
+}
+
+@each $name, $info in $callouts {
+  html[dir="rtl"] div.callout-#{$name}.callout {
+    border-right-color: shift-color(map-get($info, "color"), $callout-border-scale);
+  }
+}
+
+/* Figure captions of code output are Persian text, even though the output itself is LTR. */
+html[dir="rtl"] .cell-output-display figcaption {
+  direction: rtl;
+  text-align: right;
+}
