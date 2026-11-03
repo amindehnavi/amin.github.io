@@ -130,6 +130,58 @@ plt.show()
 
 پرانتزها (مثل این) و «گیومه‌ها» و علامت‌های ، ؛ ؟ باید درست نمایش داده شوند.
 
+## تعاملی: Observable JS
+
+با جابه‌جا کردن لغزنده، دمای سافت‌مکس را تغییر دهید.
+
+::: {dir="ltr"}
+
+```{ojs}
+//| echo: false
+viewof temperature = Inputs.range([0.1, 5], {value: 1, step: 0.1, label: "دما"})
+```
+
+```{ojs}
+//| echo: false
+logits = [2.0, 1.0, 0.1, -1.0]
+```
+
+```{ojs}
+//| echo: false
+probs = {
+  const e = logits.map(z => Math.exp(z / temperature));
+  const s = e.reduce((a, b) => a + b, 0);
+  return e.map((v, i) => ({token: `توکن ${i + 1}`, p: v / s}));
+}
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  y: {domain: [0, 1], label: "احتمال"},
+  marks: [Plot.barY(probs, {x: "token", y: "p", fill: "steelblue"}), Plot.ruleY([0])]
+})
+```
+
+:::
+
+## تعاملی: Plotly
+
+::: {dir="ltr"}
+
+```{python}
+#| echo: false
+import numpy as np
+import plotly.graph_objects as go
+
+x = np.linspace(-3, 3, 61)
+fig = go.Figure(go.Scatter(x=x, y=np.tanh(x), mode="lines"))
+fig.update_layout(title="Hover over the curve", xaxis_title="x", yaxis_title="tanh(x)")
+fig.show()
+```
+
+:::
+
 ## جزئیات
 
 <details>
