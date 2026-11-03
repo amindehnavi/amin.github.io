@@ -1,0 +1,35 @@
+---
+title: "مقالات و ارائه‌ها"
+toc: false
+listing:
+  - id: publications
+    contents: data/publications.yml
+    type: table
+    sort: "date desc"
+    fields: [date, title, author, description]
+    field-display-names:
+      description: "محل انتشار"
+    filter-ui: false
+    sort-ui: false
+  - id: talks
+    contents: data/talks.yml
+    type: table
+    sort: "date desc"
+    fields: [date, title, description]
+    field-display-names:
+      description: "رویداد"
+    filter-ui: false
+    sort-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+## مقالات
+
+::: {#publications}
+:::
+
+## ارائه‌ها و تدریس
+
+::: {#talks}
+:::
