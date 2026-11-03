@@ -6,7 +6,7 @@ ifneq ($(wildcard .venv/bin/python),)
 export QUARTO_PYTHON := $(abspath .venv/bin/python)
 endif
 
-.PHONY: help sync preview-en preview-fa render-en render-fa build serve clean
+.PHONY: help sync preview-en preview-fa render-en render-fa build serve new-post clean
 
 help:
 	@echo "make sync        copy shared/ into en/assets and fa/assets"
@@ -16,6 +16,7 @@ help:
 	@echo "make render-fa   render the Persian site into fa/_site"
 	@echo "make build       render both sites and assemble them into public/"
 	@echo "make serve       build, then serve public/ at http://localhost:8000"
+	@echo "make new-post ARGS='--slug x --title-en \"X\"'  create a post in both languages"
 	@echo "make clean       delete all build output"
 
 sync:
@@ -39,6 +40,9 @@ build: render-en render-fa
 serve: build
 	@echo "Open http://localhost:8000  (Ctrl+C to stop)"
 	$(PY) -m http.server 8000 --directory public
+
+new-post:
+	$(PY) scripts/new_post.py $(ARGS)
 
 clean:
 	rm -rf public en/_site fa/_site en/assets fa/assets en/.quarto fa/.quarto
